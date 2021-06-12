@@ -27,7 +27,7 @@ SECRET_KEY = 'ghffx5hm2m4*kk0g9@(bi!h()sj2(fdex0i!6asq9u$07fq6_!'
 DEBUG = True
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -131,8 +131,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 #EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-# EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_PORT = '587'
-# EMAIL_USE_TLS = True
-# EMAIL_HOST_USER = "subeartstudio@gmail.com"
-# EMAIL_HOST_PASSWORD = '123#$Slmgyt'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = '587'
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = "mistourasal@gmail.com"
+EMAIL_HOST_PASSWORD = 'abilrulasdhirlwl'

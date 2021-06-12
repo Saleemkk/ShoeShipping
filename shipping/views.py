@@ -27,10 +27,15 @@ def shop(request):
 
 def contact(request):
 	if request.method=='POST':
-		message_name = request.POST['message-name']
-		message_email = request.POST['message-email']
-		message_phone = request.POST['message-phone']
-		message = request.POST['message']
+		message_name = request.POST.get('message-name')
+		message_email = request.POST.get('message-email')
+		message_phone = request.POST.get('message-phone')
+		message = request.POST.get('message')
+                
+
+		# Send an email
+		send_mail(message_name,message, message_email,['mistourasal@gmail.com'])
+
 		return render(request, 'shipping/contact.html', {'message_name': message_name})
 	else:
                 return render(request,'shipping/contact.html')

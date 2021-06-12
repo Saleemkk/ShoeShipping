@@ -10,5 +10,5 @@ urlpatterns = [
     path('service/', views.service, name='service'),
     path('howtobuy/', views.howtobuy, name='howtobuy'),
     path('products/', views.products, name='products'),
-    # path('email_sent', views.sendEmail, name='email_sent'),
+ 
 ]
