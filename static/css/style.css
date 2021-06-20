@@ -202,7 +202,7 @@ a:focus {
 
 .slider_item-detail h1 {
     font-weight: bold;
-    margin: 35px 0;
+    margin: 200px 0;
     color: #000002;
 }
 
@@ -219,7 +219,7 @@ a:focus {
 }
 
 .quote-btn {
-    background-color: #0a0057;
+    background-color: #68b5dc;
 }
 
 .read-btn img,
@@ -566,20 +566,18 @@ a:focus {
     color: #fff;
     margin-top: 20px;
 }
-
+/*
 .contact_form-container::before {
     content: "";
     width: 50px;
     height: 50px;
     background-color: #78cffd;
     position: absolute;
-    /* right: 0; */
-    /* bottom: 25%; */
     left: -50px;
     top: 15%;
 }
 
-
+*/
 /* end contact_section */
 
 

@@ -11,8 +11,7 @@
         </div>
         <div class="row layout_padding2-top">
             <p>
-                You can make your purchases in two different ways that is either you can purchase yourself OR we purchase on your behalf. <br> Please follow the following details
-
+           Youbuyweshipusa.com is a derivative of housakicks. With Us, you can buy any products from Maryland local shops and US based online retailers who do not ship locally or internationally. There are two ways to use our services, You buy directly and use our address or We buy on your behalf and ship the items to your address overseas! 
             </p>
         </div>
 
@@ -111,11 +110,47 @@
                 </ul>
             </div>
         </div>
-
     </div>
+    
 
 </section>
 <!--End of Products listing-->
 
+<section class="service_section layout_padding">
+    <div class="container">
+
+         <div class="col-md-6">
+                <div class="contact_form-container">
+                   <form action= {% url 'contact' %}  method="POST">
+                        {% csrf_token %}
+                        <label for="fname">Your Name</label><br>
+                        <div>
+                            <input type="text" name="message-name" placeholder="Your Name">
+                        </div>
+                        <br>
+                         <label for="fname">Your Email</label><br>
+                        <div>
+                            <input type="email" name="message-email" placeholder="Your Email">
+                        </div>
+                        <br>
+                         <label for="fname">Your Phone Number</label><br>
+                        <div>
+                            <input type="text" name="message-phone" placeholder="Your Phone">
+                        </div>
+                        <br>
+                         <label for="fname">Details(product link, size and more) Be specific</label><br>
+                        <div>
+                            <input type="text" class="message_input" name="message" placeholder="Message">
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <button type="submit " class="">
+                    Send
+                   </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </div>
+</section>
 
 {% endblock %}

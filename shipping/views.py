@@ -33,8 +33,10 @@ def contact(request):
 		message = request.POST.get('message')
                 
 
-		# Send an email
+		# Send an emai
 		send_mail(message_name,message, message_email,['mistourasal@gmail.com'])
+
+		#send_mail(message_name,message, message_email,['saleemkhattak333@gmail.com'])
 
 		return render(request, 'shipping/contact.html', {'message_name': message_name})
 	else:
