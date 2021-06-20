@@ -121,7 +121,7 @@
 
          <div class="col-md-6">
                 <div class="contact_form-container">
-                   <form action= {% url 'contact' %}  method="POST">
+                    <form action="/contact/" method="POST">
                         {% csrf_token %}
                         <label for="fname">Your Name</label><br>
                         <div>
